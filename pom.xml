@@ -106,22 +106,4 @@
       </exclusions>
     </dependency>
   </dependencies>
-
-  <repositories>
-    <repository>
-      <id>maven-central-proxy</id>
-      <url>http://localhost:8081/repository/maven-central/</url>
-    </repository>
-  </repositories>
-
-  <build>
-    <extensions>
-      <extension>
-        <groupId>org.apache.maven.wagon</groupId>
-        <artifactId>wagon-http</artifactId>
-        <version>3.4.1</version>
-      </extension>
-    </extensions>
-  </build>
-
 </project>

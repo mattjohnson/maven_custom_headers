@@ -56,15 +56,13 @@
       <username>admin</username>
       <password>admin123</password>
       <configuration>
-        <wagonProvider>httpclient</wagonProvider>
         <httpConfiguration>
           <get>
-            <!--          <useDefaultHeaders>false</useDefaultHeaders>-->
             <headers>
-              <header>
+              <property>
                 <name>buildId</name>
-                <value>foobarcar</value>
-              </header>
+                <value>${BUILD_ID}</value>
+              </property>
             </headers>
           </get>
         </httpConfiguration>
